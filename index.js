@@ -29,39 +29,39 @@ app.use(bodyParser.json())
 
 
 let bot = new Bot({
-	token: FB_TOKEN,
-	verify: FB_VERIFY,
-	app_secret: FB_APP_SECRET
+  token: FB_TOKEN,
+  verify: FB_VERIFY,
+  app_secret: FB_APP_SECRET
 })
 
 
 bot.on('error', (err) => {
-	console.log(err.message)
+  console.log(err.message)
 })
 
 
 bot.on('postback', (payload, reply, actions) => {
-	handlePostback(payload, reply, actions);
+  handlePostback(payload, reply, actions);
 })
 
 
 bot.on('message', (payload, reply, actions) => {
-	handleMessage(bot, payload, reply, actions)
+  handleMessage(bot, payload, reply, actions)
 })
 
 
 app.get('/', (req, res) => {
-	return bot._verify(req, res)
+  return bot._verify(req, res)
 })
 
 
 app.post('/', (req, res) => {
-	bot._handleMessage(req.body)
-	res.end(JSON.stringify({status: 'ok'}))
+  bot._handleMessage(req.body)
+  res.end(JSON.stringify({status: 'ok'}))
 })
 
 
 // Spin up the server
 app.listen(app.get('port'), () => {
-	console.log('running on port', app.get('port'))
+  console.log('running on port', app.get('port'))
 })

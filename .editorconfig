@@ -14,7 +14,8 @@ indent_size = 2
 
 # JS
 [*.js]
-indent_style = tab
+indent_style = space
+indent_size = 2
 
 # JSON
 [*.json]

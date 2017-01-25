@@ -395,10 +395,10 @@ const steps = [
 							"subtitle": 'Jeg har lige testet min viden i den hårdeste quiz.',
 							"image_url": 'https://image.shutterstock.com/display_pic_with_logo/1998197/370349945/stock-photo-king-of-style-sneering-young-handsome-man-wearing-suit-and-crown-keeping-arms-crossed-and-looking-370349945.jpg',
 							"buttons": [
-	              {
-	                "type":"element_share"
-	              }
-	            ]
+								{
+									"type":"element_share"
+								}
+							]
 						}
 					]
 				}
