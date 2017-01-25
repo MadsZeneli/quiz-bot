@@ -1,0 +1,22 @@
+# http://EditorConfig.org
+# top-most EditorConfig file
+root = true
+
+# Stylesheets
+[*.scss,.css,.less,.styl]
+indent_style = space
+indent_size = 2
+
+# JADE
+[*.jade]
+indent_style = space
+indent_size = 2
+
+# JS
+[*.js]
+indent_style = tab
+
+# JSON
+[*.json]
+indent_style = space
+indent_size = 2
