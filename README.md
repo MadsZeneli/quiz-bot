@@ -21,7 +21,6 @@ __Take care of all Facebook configurations:__
 ---
 #### __3. Set global variables__
 * process.env.PORT
-* process.env.FB_TOKEN (T)
+* process.env.FB_TOKEN
 * process.env.FB_VERIFY
 * process.env.FB_APP_SECRET
----
